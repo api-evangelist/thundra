@@ -1,0 +1,20 @@
+# Thundra
+
+> Thundra was an application observability and security platform for serverless, container, and VM workloads — Thundra APM (distributed tracing), Sidekick (remote debugging), and Foresight (CI test observability). Catchpoint acquired its assets in April 2023 and the service has been discontinued; thundra.io now redirects to Catchpoint's acquisition announcement and the GitHub organization states "Thundra is no longer in service." No public API surface remains.
+
+## Company
+
+- [Catchpoint acquisition press release (2023-04-18)](https://www.catchpoint.com/press-releases/catchpoint-invests-to-advance-api-cloud-functions-and-microservices-monitoring): Catchpoint acquired the assets of Thundra.io
+- [GitHub organization](https://github.com/thundra-io): 65 public repos; org description states "Thundra is no longer in service"
+
+## Packages (still published, backend discontinued)
+
+- [@thundra/core on npm](https://www.npmjs.com/package/@thundra/core): Node.js agent, v3.1.0
+- [thundra on PyPI](https://pypi.org/project/thundra/): Python agent, v3.0.10
+- [Thundra.Agent on NuGet](https://www.nuget.org/packages/Thundra.Agent): .NET agent, v6.0.0
+- [thundra-lambda-agent-go](https://pkg.go.dev/github.com/thundra-io/thundra-lambda-agent-go): Go agent for AWS Lambda
+- [io.thundra.agent on Maven Central](https://central.sonatype.com/search?q=io.thundra.agent): Foresight test instrumentation
+
+## Specs
+
+No OpenAPI, AsyncAPI, or other machine-readable API definitions were found; the developer docs hosts (docs.thundra.io, apm.docs.thundra.io) no longer resolve.

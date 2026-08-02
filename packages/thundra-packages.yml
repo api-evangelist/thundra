@@ -1,0 +1,63 @@
+generated: '2026-07-21'
+method: searched
+source: npm, PyPI, Maven Central, NuGet, pkg.go.dev registry lookups (verified 2026-07-21)
+note: Thundra was discontinued after Catchpoint acquired its assets in April 2023; the
+  GitHub org states "Thundra is no longer in service". These first-party agents and
+  plugins remain published on the public registries but the backend service they report
+  to has been shut down.
+status: discontinued
+packages:
+- language: javascript
+  registry: npm
+  name: "@thundra/core"
+  url: https://www.npmjs.com/package/@thundra/core
+  install: npm install @thundra/core
+  version: 3.1.0
+  official: true
+  description: Thundra Node.js agent (AWS Lambda observability)
+- language: javascript
+  registry: npm
+  name: serverless-plugin-thundra
+  url: https://www.npmjs.com/package/serverless-plugin-thundra
+  install: npm install serverless-plugin-thundra
+  version: 2.6.2
+  official: true
+  description: Serverless Framework plugin that auto-wraps AWS Lambda functions with Thundra
+- language: python
+  registry: pypi
+  name: thundra
+  url: https://pypi.org/project/thundra/
+  install: pip install thundra
+  version: 3.0.10
+  official: true
+  description: Thundra Python agent (repo moved to thundra-io/cp-trace-python)
+- language: java
+  registry: maven
+  name: io.thundra.agent:thundra-agent-maven-test-instrumentation
+  url: https://central.sonatype.com/artifact/io.thundra.agent/thundra-agent-maven-test-instrumentation
+  version: 0.0.4
+  official: true
+  description: Maven test instrumentation for Thundra Foresight
+- language: java
+  registry: maven
+  name: io.thundra.agent:thundra-gradle-test-plugin
+  url: https://central.sonatype.com/artifact/io.thundra.agent/thundra-gradle-test-plugin
+  version: 0.0.5
+  official: true
+  description: Gradle test plugin for Thundra Foresight
+- language: csharp
+  registry: nuget
+  name: Thundra.Agent
+  url: https://www.nuget.org/packages/Thundra.Agent
+  install: dotnet add package Thundra.Agent
+  version: 6.0.0
+  official: true
+  description: Thundra .NET agent
+- language: go
+  registry: pkg.go.dev
+  name: github.com/thundra-io/thundra-lambda-agent-go
+  url: https://pkg.go.dev/github.com/thundra-io/thundra-lambda-agent-go
+  install: go get github.com/thundra-io/thundra-lambda-agent-go
+  version: v1.4.0
+  official: true
+  description: Thundra Go agent for AWS Lambda

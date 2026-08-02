@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+host: https://www.thundra.io
+note: No live well-known surface. thundra.io still resolves (170.187.159.10) but serves
+  an expired TLS certificate (CN=thundra.io, expired 2024-08-24) and 301-redirects every
+  path — including all /.well-known/ probes — to Catchpoint's acquisition press release.
+  All product subdomains (docs, api, blog, console, status, apm, collector) no longer
+  have DNS records. Probed 2026-07-21 with certificate verification disabled to observe
+  the redirects.
+redirect_target: https://www.catchpoint.com/press-releases/catchpoint-invests-to-advance-api-cloud-functions-and-microservices-monitoring
+documents:
+- path: /.well-known/security.txt
+  status: 301
+- path: /.well-known/openid-configuration
+  status: 301
+- path: /.well-known/oauth-authorization-server
+  status: 301
+- path: /.well-known/api-catalog
+  status: 301
+- path: /.well-known/ai-plugin.json
+  status: 301

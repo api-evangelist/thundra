@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.catchpoint.com/press-releases/catchpoint-invests-to-advance-api-cloud-functions-and-microservices-monitoring
+service_status: discontinued
+end_of_life:
+  acquired_by: Catchpoint
+  acquisition_announced: '2023-04-18'
+  evidence:
+  - GitHub organization thundra-io description reads "Thundra is no longer in service"
+  - thundra.io 301-redirects to Catchpoint's acquisition press release (TLS certificate
+    expired 2024-08-24)
+  - Product subdomains (docs.thundra.io, api.thundra.io, console.thundra.io,
+    status.thundra.io, apm.thundra.io, collector.thundra.io, blog.thundra.io) have no
+    DNS records
+versioning: null
+deprecation: null
+sla: null
+status_page: null
+deprecated_operations: []

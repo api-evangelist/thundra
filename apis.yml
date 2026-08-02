@@ -1,20 +1,71 @@
 aid: thundra
 name: Thundra
-description: Thundra is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Thundra was an application observability and security platform for serverless,
+  container, and VM workloads, best known for AWS Lambda monitoring and debugging. Its
+  products included Thundra APM (distributed tracing), Sidekick (remote debugging), and
+  Foresight (CI pipeline test observability). Founded in 2018 out of OpsGenie and backed
+  by Battery Ventures, its assets were acquired by Catchpoint in April 2023 and the
+  service has been discontinued — thundra.io now redirects to Catchpoint's acquisition
+  announcement and the GitHub organization states "Thundra is no longer in service."
+  Its open-source agents and plugins remain published on npm, PyPI, Maven Central,
+  NuGet, and pkg.go.dev.
 url: https://raw.githubusercontent.com/api-evangelist/thundra/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/36259632
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquired-by: catchpoint
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Observability
+- Serverless
+- APM
+- Monitoring
+- Debugging
+- AWS Lambda
+- Defunct
 apis: []
+common:
+- type: DomainSecurity
+  url: security/thundra-domain-security.yml
+- name: Website
+  type: Website
+  url: https://www.thundra.io
+- name: GitHub Organization
+  type: GitHubOrganization
+  url: https://github.com/thundra-io
+- name: Packages
+  type: Packages
+  url: packages/thundra-packages.yml
+- name: LLMs.txt
+  type: LLMsTxt
+  url: llms/thundra-llms.txt
+- name: Lifecycle
+  type: Lifecycle
+  url: lifecycle/thundra-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
