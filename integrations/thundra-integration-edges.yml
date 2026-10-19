@@ -32,12 +32,127 @@ edges:
     detected: '2026-10-15'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
+- partner_name: Go module proxy
+  partner: null
+  partner_match: null
+  type: register
+  direction: provider-built
+  category: official SDK (Go)
+  evidence: https://pkg.go.dev/github.com/thundra-io/thundra-lambda-agent-go
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Go module proxy (public registry JSON)
+    spec_file: null
+    language: Go
+    packages:
+    - name: github.com/thundra-io/thundra-lambda-agent-go
+      version: v1.4.0
+      released: '2018-07-13'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/thundra-io/thundra-lambda-agent-go
+      repo_leg: github-org:thundra-io
+      publisher_leg: org:thundra-io
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: Maven Central
+  partner: maven-central
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Java/JVM)
+  evidence: https://central.sonatype.com/artifact/io.thundra.agent/thundra-agent-maven-test-instrumentation
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Maven Central (public registry JSON)
+    spec_file: null
+    language: Java/JVM
+    packages:
+    - name: io.thundra.agent:thundra-agent-maven-test-instrumentation
+      version: 0.0.4
+      released: '2021-07-16'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/io.thundra.agent/thundra-agent-maven-test-instrumentation
+      repo_leg: github-org:thundra-io
+      publisher_leg: groupId:thundra.io
+      matched_by: domain
+    - name: io.thundra.agent:thundra-gradle-test-plugin
+      version: 0.0.5
+      released: '2021-06-25'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/io.thundra.agent/thundra-gradle-test-plugin
+      repo_leg: github-org:thundra-io
+      publisher_leg: groupId:thundra.io
+      matched_by: domain
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@thundra/core
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@thundra/core'
+      version: 3.1.0
+      released: '2025-09-16'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@thundra/core
+      repo_leg: github-org:thundra-io
+      publisher_leg: email:thundra.io
+      matched_by: domain
+    - name: serverless-plugin-thundra
+      version: 2.6.2
+      released: '2025-09-16'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/serverless-plugin-thundra
+      repo_leg: domain:thundra.io
+      publisher_leg: email:thundra.io
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 generated: '2026-10-15'
 method: searched
 source:
 - https://github.com/cncf/landscape
 - https://github.com/cncf/k8s-conformance
 checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
 - https://focus.finops.org/data-generators/
 - https://github.com/cncf/k8s-conformance
 - https://github.com/cncf/landscape
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
