@@ -140,6 +140,23 @@ edges:
     detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
+- partner_name: Atlassian (own)
+  partner: atlassian
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.atlassian.com/vendors/1220848/thundra
+  mirror_of: atlassian/integrations/atlassian-integration-edges.yml
+  apps:
+  - Thundra Foresight Initializer
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: Monitoring
 generated: '2026-10-15'
 method: searched
 source:
@@ -156,3 +173,4 @@ checked:
 - https://registry.npmjs.org
 - https://repo1.maven.org/maven2
 - https://rubygems.org/api/v1
+- atlassian/integrations/atlassian-integration-edges.yml

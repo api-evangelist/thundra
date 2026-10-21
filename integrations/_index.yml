@@ -147,3 +147,16 @@
     detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
+- slug: thundra-atlassian-own
+  label: Atlassian (own)
+  partner: atlassian
+  partner_name: Atlassian (own)
+  category: Monitoring
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.atlassian.com/vendors/1220848/thundra
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
